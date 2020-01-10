@@ -37,12 +37,12 @@ exports.register = (req, res) => {
             } else {
               bcrypt.genSalt(saltRound, (err, salt) => {
                 if (err) {
-                  message = "Server response error";
+                  message = "Server response error 1";
                   res.status(500).json({ message });
                 } else {
                   bcrypt.hash(password, salt, (err, hash) => {
                     if (err) {
-                      message = "Server response error";
+                      message = "Server response error 2";
                       res.status(500).json({ message });
                     } else {
                       User.create({
