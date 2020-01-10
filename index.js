@@ -17,7 +17,7 @@ const favoriteContoller = require('./controllers/favorite');
 
 
 app.get("/", (req, res) => {
-    res.send("apa Ko Kimak");
+    res.send("Hello World!!");
 });
 
 app.group("/api/v1", router => {
